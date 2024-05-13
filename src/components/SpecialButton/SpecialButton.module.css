@@ -1,0 +1,16 @@
+.specialBtn {
+	height: 20rem;
+	width: 30rem;
+	border-radius: 20px;
+	border: 1px dashed rgba(231, 229, 228, 0.5);
+	outline: none;
+	background-color: #292524;
+	color: rgba(231, 229, 228, 0.5);
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.specialBtn:hover {
+	border: 1px dashed rgb(231, 229, 228);
+	color: rgb(231, 229, 228);
+}

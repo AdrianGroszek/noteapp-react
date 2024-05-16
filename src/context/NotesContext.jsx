@@ -7,24 +7,26 @@ const initialState = {
 	notes: [
 		{
 			id: 1,
-			noteTitle: 'Example Title',
-			noteContent: 'Example note content...',
+			noteTitle: 'Test learning note',
+			noteContent:
+				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ea consectetur quidem inventore fuga facilis dolores similique numquam non temporibus labore, odio commodi, voluptatem.',
 			noteDate: 'dd/mm/yyyy',
-			noteCategory: 'Work',
+			noteCategory: 'Learning',
 		},
 		{
 			id: 21,
-			noteTitle: 'Example Title',
-			noteContent: 'Examplsssse note content...',
+			noteTitle: 'Test work note',
+			noteContent:
+				'Work Work, work, work, work, work, work He said me work, work, work, work, work, work',
 			noteDate: 'dd/mm/yyyy',
 			noteCategory: 'Work',
 		},
 		{
 			id: 13,
-			noteTitle: 'Example Title',
-			noteContent: 'Examplvvssse note content...',
+			noteTitle: 'Creativity note',
+			noteContent: 'hello',
 			noteDate: 'dd/mm/yyyy',
-			noteCategory: 'Work',
+			noteCategory: 'Creativity',
 		},
 	],
 	filterCategory: 'All',
@@ -54,7 +56,7 @@ const initialState = {
 		{
 			id: '3',
 			filter: 'Shopping',
-			textColor: '#EF4444',
+			textColor: '#ef4444',
 			bgColor: '#FEE2E2',
 			active: false,
 		},
@@ -155,7 +157,6 @@ function reducer(state, action) {
 					? (filterItem.active = true)
 					: (filterItem.active = false)
 			);
-
 			//tworzenie zmiennej, która przechowuje przefiltrowane elementy na podstawie kategorii
 
 			const filteredNotes =

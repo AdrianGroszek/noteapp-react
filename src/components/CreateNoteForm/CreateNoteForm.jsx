@@ -8,10 +8,17 @@ function CreateNoteForm() {
 	const [noteTitle, setNoteTitle] = useState('');
 	const [noteContent, setNoteContent] = useState('');
 	const [noteCategory, setNoteCategory] = useState('Work');
+	const [inputIsEmpty, setInputIsEmpty] = useState(false);
 
 	const noteDate = new Date().toLocaleDateString();
 
 	function createNote() {
+		if (!noteTitle || !noteContent) {
+			setInputIsEmpty(true);
+		} else {
+			setInputIsEmpty(false);
+		}
+
 		if (!noteTitle || !noteContent || !noteCategory) return;
 
 		const newNote = {
@@ -39,6 +46,7 @@ function CreateNoteForm() {
 						<input
 							type='text'
 							placeholder='Example title'
+							maxLength={18}
 							onChange={(e) => setNoteTitle(e.target.value)}
 						/>
 					</div>
@@ -71,6 +79,11 @@ function CreateNoteForm() {
 						</select>
 					</div>
 				</div>
+				{inputIsEmpty ? (
+					<span className={styles.infoEmptyInput}>FILL BLANK FIELDS!</span>
+				) : (
+					''
+				)}
 				<div className={styles.btnBox}>
 					<button
 						className={`${styles.btn} ${styles.btnRed}`}

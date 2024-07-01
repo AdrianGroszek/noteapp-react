@@ -10,7 +10,7 @@ const initialState = {
 			noteTitle: 'Test learning note',
 			noteContent:
 				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ea consectetur quidem inventore fuga facilis dolores similique numquam non temporibus labore, odio commodi, voluptatem.',
-			noteDate: 'dd/mm/yyyy',
+			noteDate: '14/03/2024',
 			noteCategory: 'Learning',
 		},
 		{
@@ -18,14 +18,14 @@ const initialState = {
 			noteTitle: 'Test work note',
 			noteContent:
 				'Work Work, work, work, work, work, work He said me work, work, work, work, work, work',
-			noteDate: 'dd/mm/yyyy',
+			noteDate: '18/03/2024',
 			noteCategory: 'Work',
 		},
 		{
 			id: 13,
 			noteTitle: 'Creativity note',
 			noteContent: 'hello',
-			noteDate: 'dd/mm/yyyy',
+			noteDate: '02/05/2024',
 			noteCategory: 'Creativity',
 		},
 	],

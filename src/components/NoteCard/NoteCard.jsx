@@ -27,7 +27,6 @@ function NoteCard({ note }) {
 					{noteCategory.toUpperCase()}
 				</div>
 				<div className={styles.btns}>
-					<button className={styles.editBtn}>Edit</button>
 					<button className={styles.deleteBtn} onClick={() => deleteNote(id)}>
 						X
 					</button>
